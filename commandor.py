@@ -3,7 +3,7 @@ import sys
 import creater as crt
 import deleter as dlt
 
-
+print("egor")
 def index():
     print()
     print("Hello,Egor")
