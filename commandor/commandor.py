@@ -3,7 +3,7 @@ import sys
 import creater as crt
 import deleter as dlt
 
-print("egor")
+
 def index():
     print()
     print("Hello,Egor")
@@ -16,14 +16,29 @@ def index():
 
 
     print()
+    print()
+
+
     if (goal == 'create file'):
         crt.create_file()
 
     if (goal == 'delete file'):
         dlt.delete_file()
 
+    if (goal == 'create folder'):
+        crt.create_folder()
+
+    if (goal == 'delete folder'):
+        dlt.delete_folder()
+
     if (goal != 'stop'):
         index()
+
+
+
+    print()
+    print()
+
 
 if __name__ == "__main__":
     index()
