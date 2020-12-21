@@ -4,7 +4,7 @@ import creater as crt
 import deleter as dlt
 import place as place
 import time_info as time
-
+import operating as OS
 
 def index():
     print()
@@ -38,6 +38,9 @@ def index():
 
     if(goal == 'get time'):
         time.time()
+
+    if(goal == 'tell about operating system'):
+        OS.operating_system()
 
     if (goal != 'stop'):
         index()
