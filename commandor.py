@@ -8,6 +8,7 @@ import modules.operating as OS
 import modules.weather as wth
 import modules.ip_adress as ip
 import modules.modules as modules
+import modules.calc as calc
 
 def index():
     print()
@@ -57,8 +58,12 @@ def index():
     if(goal == 'get skills'):
         modules.skills()
 
+    if(goal =='calculator'):
+        calc.calculator()
+
     if (goal != 'stop'):
         index()
+
     print()
 
 
