@@ -1,12 +1,12 @@
 import os
 import sys
-import creater as crt
-import deleter as dlt
-import place as place
-import time_info as time
-import operating as OS
-import weather as wth
-import ip_adress as ip
+import modules.creater as crt
+import modules.deleter as dlt
+import modules.place as place
+import modules.time_info as time
+import modules.operating as OS
+import modules.weather as wth
+import modules.ip_adress as ip
 
 def index():
     print()
@@ -19,7 +19,6 @@ def index():
 
 
     print()
-    
 
 
     if (goal == 'create file'):
@@ -41,6 +40,7 @@ def index():
     if(goal == 'get weather'):
         wth.weather()
     """
+
     if(goal == 'get time'):
         time.time()
 
