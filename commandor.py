@@ -6,11 +6,11 @@ import place as place
 import time_info as time
 import operating as OS
 import weather as wth
+import ip_adress as ip
 
 def index():
     print()
-    print("Hello,Egor")
-    print()
+    print("Hello")
     print()
     print("Write here your goal,senior")
 
@@ -19,7 +19,7 @@ def index():
 
 
     print()
-    print()
+    
 
 
     if (goal == 'create file'):
@@ -34,25 +34,26 @@ def index():
     if (goal == 'delete folder'):
         dlt.delete_folder()
 
+    """
     if(goal == 'get my place'):
         place.placer()
 
     if(goal == 'get weather'):
         wth.weather()
-
+    """
     if(goal == 'get time'):
         time.time()
 
     if(goal == 'tell about operating system'):
         OS.operating_system()
 
+    if(goal == 'get my ip'):
+        ip.getIP()
+
     if (goal != 'stop'):
         index()
-
-
-
     print()
-    print()
+
 
 
 if __name__ == "__main__":
