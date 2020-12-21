@@ -45,7 +45,7 @@ def index():
     if (goal != 'stop'):
         index()
 
-    
+
 
     print()
     print()
