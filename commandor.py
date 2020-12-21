@@ -7,6 +7,7 @@ import modules.time_info as time
 import modules.operating as OS
 import modules.weather as wth
 import modules.ip_adress as ip
+import modules.modules as modules
 
 def index():
     print()
@@ -49,6 +50,12 @@ def index():
 
     if(goal == 'get my ip'):
         ip.getIP()
+
+    if(goal == 'number of skills commandor'):
+        modules.number_skills()
+
+    if(goal == 'get skills'):
+        modules.skills()
 
     if (goal != 'stop'):
         index()
