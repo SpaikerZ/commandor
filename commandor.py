@@ -2,6 +2,8 @@ import os
 import sys
 import creater as crt
 import deleter as dlt
+import place as place
+import time_info as time
 
 
 def index():
@@ -31,10 +33,16 @@ def index():
     if (goal == 'delete folder'):
         dlt.delete_folder()
 
+    if(goal == 'get my place'):
+        place.placer()
+
+    if(goal == 'get time'):
+        time.time()
+
     if (goal != 'stop'):
         index()
 
-
+    
 
     print()
     print()
