@@ -5,6 +5,7 @@ import deleter as dlt
 import place as place
 import time_info as time
 import operating as OS
+import weather as wth
 
 def index():
     print()
@@ -35,6 +36,9 @@ def index():
 
     if(goal == 'get my place'):
         place.placer()
+
+    if(goal == 'get weather'):
+        wth.weather()
 
     if(goal == 'get time'):
         time.time()
