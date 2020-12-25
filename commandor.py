@@ -69,7 +69,7 @@ def index():
         web.maps()
 
     if(goal == 'open browser'):
-        web.browsers()
+        web.open_browsers()
 
     if (goal != 'stop'):
         index()
