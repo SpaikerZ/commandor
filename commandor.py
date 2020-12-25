@@ -68,6 +68,9 @@ def index():
     if(goal == 'google maps'):
         web.maps()
 
+    if(goal == 'open browser'):
+        web.browsers()
+
     if (goal != 'stop'):
         index()
 
