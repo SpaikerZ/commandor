@@ -11,7 +11,7 @@ def maps():
 def open_browsers():
     print('what browser do u want? (for example: google-chrome)')
     kind = str(input())
-    for key in py :
+    for key in py.keys() :
         print(key)
         """, ' --> ', browsers[key]"""
 
