@@ -56,8 +56,10 @@ def index():
     if(goal == 'number of skills commandor'):
         modules.number_skills()
 
+    """
     if(goal == 'get skills'):
         modules.skills()
+    """
 
     if(goal == 'calculator'):
         calc.calculator()
@@ -74,7 +76,7 @@ def index():
         web.open_browsers()
     """
 
-    
+
 
     if (goal != 'stop'):
         index()
